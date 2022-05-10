@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Proiect-BPO-Problema-1", "Proiect-BPO-Problema-1.vbproj", "{E7A73418-CAE6-4B99-8951-30736753C1B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A73418-CAE6-4B99-8951-30736753C1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A73418-CAE6-4B99-8951-30736753C1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A73418-CAE6-4B99-8951-30736753C1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A73418-CAE6-4B99-8951-30736753C1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1D952C3-1660-46B3-92B3-F95C4B137AC2}
+	EndGlobalSection
+EndGlobal

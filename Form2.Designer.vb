@@ -46,11 +46,12 @@ Partial Class Form2
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(815, 553)
+        Me.Button1.Location = New System.Drawing.Point(816, 556)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(86, 31)
@@ -117,6 +118,7 @@ Partial Class Form2
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"G2U1", "G2U2", "G2U3", "G2U4"})
         Me.ComboBox3.Location = New System.Drawing.Point(149, 188)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ComboBox3.Name = "ComboBox3"
@@ -126,6 +128,7 @@ Partial Class Form2
         'ComboBox4
         '
         Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"G2U1P", "G2U2P", "G2U3P", "G2U4P"})
         Me.ComboBox4.Location = New System.Drawing.Point(294, 188)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ComboBox4.Name = "ComboBox4"
@@ -223,7 +226,7 @@ Partial Class Form2
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(86, 31)
         Me.Button3.TabIndex = 24
-        Me.Button3.Text = "Add"
+        Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
@@ -233,7 +236,7 @@ Partial Class Form2
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(86, 31)
         Me.Button4.TabIndex = 25
-        Me.Button4.Text = "Add"
+        Me.Button4.Text = "Modify"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
@@ -243,7 +246,7 @@ Partial Class Form2
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(86, 31)
         Me.Button5.TabIndex = 26
-        Me.Button5.Text = "Add"
+        Me.Button5.Text = "Search"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'TextBox1
@@ -272,11 +275,22 @@ Partial Class Form2
         Me.Button6.Text = "Save"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(724, 556)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(86, 31)
+        Me.Button7.TabIndex = 30
+        Me.Button7.Text = "Back"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(914, 600)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -332,4 +346,5 @@ Partial Class Form2
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class

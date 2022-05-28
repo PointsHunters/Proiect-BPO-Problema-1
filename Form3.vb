@@ -35,7 +35,34 @@
             Next
         End If
         For index = 0 To 25
-            Me.ListBox1.Items.Add("Letter " & alphabet(index) & ": " & counter(index))
+            Me.ListBox1.Items.Add("Letter " & alphabet(index) & ": " & counter(index))  'afisam lista de caractere si de cate ori se repeta
         Next
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim str As String
+        Dim i, l, words As Integer
+        str = Me.RichTextBox1.Text
+
+        str = LTrim(str) 'strege spatile in plus de la inceputul textului
+        str = RTrim(str) 'sterge spatile in plus de la sfarsitul textului
+        l = str.Length
+        i = 0
+        words = 0
+        While (i < l)
+            If str(i) = " " Then
+                words = words + 1
+                i = i + 1
+                While str(i) = " "  'sterge spatiu in caz ca sunt lipite impreuna
+                    i = i + 1
+                End While
+            Else
+                i = i + 1
+            End If
+
+        End While
+
+        words = words + 1 'adauga ultimul cuvant 
+        Me.ListBox1.Items.Add("words: " & words)
     End Sub
 End Class

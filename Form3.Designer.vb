@@ -29,6 +29,7 @@ Partial Class Form3
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -62,9 +63,9 @@ Partial Class Form3
         '
         Me.Button3.Location = New System.Drawing.Point(262, 216)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(85, 23)
+        Me.Button3.Size = New System.Drawing.Size(107, 23)
         Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Count letters"
+        Me.Button3.Text = "Count characters"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'RichTextBox1
@@ -93,11 +94,21 @@ Partial Class Form3
         Me.Button4.Text = "Count each letter"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(262, 257)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(107, 23)
+        Me.Button5.TabIndex = 14
+        Me.Button5.Text = "Count words"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.RichTextBox1)
@@ -118,4 +129,5 @@ Partial Class Form3
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

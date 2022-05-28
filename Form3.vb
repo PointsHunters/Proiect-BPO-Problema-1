@@ -44,8 +44,8 @@
         Dim i, l, words As Integer
         str = Me.RichTextBox1.Text
 
-        str = LTrim(str) 'strege spatile in plus de la inceputul textului
-        str = RTrim(str) 'sterge spatile in plus de la sfarsitul textului
+        str = LTrim(str) 'strege spatile in plus de la inceputul textului (stanga)
+        str = RTrim(str) 'sterge spatile in plus de la sfarsitul textului (dreapta)
         l = str.Length
         i = 0
         words = 0
@@ -61,8 +61,10 @@
             End If
 
         End While
+        If words <> 0 Then
+            words = words + 1 'adauga ultimul cuvant 
+        End If
 
-        words = words + 1 'adauga ultimul cuvant 
-        Me.ListBox1.Items.Add("words: " & words)
+        MsgBox("words: " & words)
     End Sub
 End Class
